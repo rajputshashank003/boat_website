@@ -32,9 +32,21 @@ const AppBar = () => {
             </div>
             <div className="absolute w-1/2 h-screen max-md:text-xl left-full z-[9999] bg-[#02272F] flex flex-col top-20 menu_bg md:hidden">
                 <div className="absolute flex flex-col cursor-pointer gap-2 left-4">
-                    <span className="menu_options  hover:underline duration-300">Products</span>
-                    <span className="menu_options hover:underline duration-300">My Account</span>
-                    <span className="menu_options hover:underline duration-300">Offer</span>
+                    <div className=" relative overflow-hidden h-8 hover:underline duration-300">
+                        <span className="menu_options relative">
+                            Products
+                        </span>
+                    </div>
+                    <div className=" relative overflow-hidden h-8 hover:underline duration-300">
+                        <span className="menu_options relative">
+                            My Account
+                        </span>
+                    </div>
+                    <div className=" relative overflow-hidden h-8 hover:underline duration-300">
+                        <span className="menu_options relative">
+                            Offer
+                        </span>
+                    </div>
                 </div>
                 <div className="absolute bottom-26 text-sm left-4">
                     &copy; 2025 <a href="https://chessv.netlify.app" className="decoration-none hover:underline">ChessV</a>
