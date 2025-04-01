@@ -16,7 +16,7 @@ const LandingPageBar1 = () => {
                     delay={150}
                     animateBy="words"
                     direction="top"
-                    className="text-2xl"
+                    className="text-2xl flex justify-center"
                 />
             </div>
         </div>
