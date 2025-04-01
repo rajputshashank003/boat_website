@@ -42,7 +42,11 @@ const LandingPage1 = () => {
                 <div className=" text-[1rem] sm:text-[1.2rem] text-[#253842]">
                     Delivering truly colossal <br /> Sound with extreme bass,
                 </div>
-                <button
+                <motion.button
+                    initial={{opacity : 0, y : 30}}
+                    whileInView={{opacity : 1 , y : 0}}
+                    viewport={{amount : 0.5}}
+                    transition={{duration : 1, ease : "easeInOut"}}
                     className={`
                         relative p-4 text-[1.2rem] w-fit rounded-md font-semibold
                         duration-300 cursor-pointer border border-[#253842]
@@ -51,7 +55,7 @@ const LandingPage1 = () => {
                     `}
                 >
                     Check out Boat
-                </button>
+                </motion.button>
             </div>
         </div>
         <motion.div 
